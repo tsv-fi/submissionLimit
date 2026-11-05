@@ -1,0 +1,21 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-05T00:00:00+00:00\n"
+"PO-Revision-Date: 2026-11-05T00:00:00+00:00\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "plugins.generic.submissionLimit.displayName"
+msgstr "Submission Limit"
+
+msgid "plugins.generic.submissionLimit.description"
+msgstr "Only site administrators, journal managers, section editors and assistants can create new submissions with an API key. Submissions made through the journal website are not affected."
+
+msgid "plugins.generic.submissionLimit.error.apiKey"
+msgstr "New submissions cannot be created with an API key. Please use the submission form on the journal website."
