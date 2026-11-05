@@ -18,4 +18,4 @@ msgid "plugins.generic.submissionLimit.description"
 msgstr "Only site administrators, journal managers, section editors and assistants can create new submissions with an API key. Submissions made through the journal website are not affected."
 
 msgid "plugins.generic.submissionLimit.error.apiKey"
-msgstr "New submissions cannot be created with an API key. Please use the submission form on the journal website."
+msgstr "You are not allowed to create new submissions with an API key."

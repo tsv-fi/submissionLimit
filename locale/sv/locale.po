@@ -18,4 +18,4 @@ msgid "plugins.generic.submissionLimit.description"
 msgstr "Endast webbplatsadministratörer, tidskriftsadministratörer, sektionsredaktörer och assistenter kan skapa nya bidrag med en API-nyckel. Bidrag som skickas in via tidskriftens webbplats påverkas inte."
 
 msgid "plugins.generic.submissionLimit.error.apiKey"
-msgstr "Nya bidrag kan inte skapas med en API-nyckel. Använd inlämningsformuläret på tidskriftens webbplats."
+msgstr "Du har inte behörighet att skapa nya bidrag med en API-nyckel."

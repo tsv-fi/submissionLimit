@@ -18,4 +18,4 @@ msgid "plugins.generic.submissionLimit.description"
 msgstr "Vain sivuston ylläpitäjät, julkaisun hallinnoijat, osastotoimittajat ja avustajat voivat luoda uusia käsikirjoituksia API-avaimella. Julkaisun verkkosivujen kautta tehtyihin käsikirjoituksiin tämä ei vaikuta."
 
 msgid "plugins.generic.submissionLimit.error.apiKey"
-msgstr "Uusia käsikirjoituksia ei voi luoda API-avaimella. Käytä julkaisun verkkosivujen lähetyslomaketta."
+msgstr "Sinulla ei ole oikeutta luoda uusia käsikirjoituksia API-avaimella."
