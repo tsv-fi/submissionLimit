@@ -36,11 +36,19 @@ class SubmissionLimitPlugin extends GenericPlugin
     {
         $success = parent::register($category, $path, $mainContextId);
 
-        if ($success && $this->getEnabled($mainContextId)) {
+        if ($success && $this->getEnabled()) {
             Hook::add('Submission::validate', [$this, 'validateNewSubmission']);
         }
 
         return $success;
+    }
+
+    /**
+     * @copydoc Plugin::isSitePlugin()
+     */
+    public function isSitePlugin(): bool
+    {
+        return true;
     }
 
     /**
