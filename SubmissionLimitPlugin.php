@@ -88,15 +88,23 @@ class SubmissionLimitPlugin extends GenericPlugin
 
     /**
      * Was the current request authenticated with an API key?
+     *
+     * DecodeApiTokenWithValidation authenticates the token on the Laravel request
+     * and never calls PKPHandler::setApiToken(), so read the token the same way it
+     * does: Bearer header, or the apiToken query param when no Authorization header
+     * is sent. An invalid token has already been rejected before this hook runs.
      */
     protected function isApiKeyRequest($request): bool
     {
-        $router = $request->getRouter();
-        if (!($router instanceof APIRouter)) {
+        if (!($request->getRouter() instanceof APIRouter)) {
             return false;
         }
-        $handler = $router->getHandler();
-        return $handler && (bool) $handler->getApiToken();
+
+        $illuminateRequest = app('request');
+        if (!$illuminateRequest->header('Authorization')) {
+            return (bool) $illuminateRequest->query('apiToken');
+        }
+        return (bool) $illuminateRequest->bearerToken();
     }
 
     /**
